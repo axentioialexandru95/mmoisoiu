@@ -1,0 +1,58 @@
+<nav class="navbar navbar-expand-lg navbar-dark" style="background-color: black;">
+  <div class="container">
+    <ul class="nav navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="tel:0751-683-911">Phone Number: 0751 683 911</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="mailto:axentioialexandru95@gmail.com">Email: contact@mihaimoisoiu.ro</a>
+      </li>
+    </ul>
+    <ul class="nav navbar-nav ml-auto">
+      <li class="nav-item">
+        <a href="#" class="nav-link"><i class="fa fa-facebook"></i></a>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="nav-link"><i class="fa fa-google"></i></a>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="nav-link"><i class="fa fa-twitter"></i></a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container">
+    <a href="#" class="navbar-brand"><img src="../../assets/logo.png" alt=""></a>
+    <ul class="nav navbar-nav mr-auto">
+
+    </ul>
+    <ul class="nav navbar-nav ml-auto">
+      <li class="nav-item" routerLinkActive="active">
+        <a class="nav-link" routerLink="home">Acasa</a>
+      </li>
+      <li class="nav-item" routerLinkActive="active">
+        <a class="nav-link" routerLink="about">Despre</a>
+      </li>
+      <li class="nav-item" routerLinkActive="active">
+        <a class="nav-link" routerLink="shop">Magazin</a>
+      </li>
+      <li class="nav-item" routerLinkActive="active">
+        <a class="nav-link" routerLink="blog">Blog</a>
+      </li>
+      <li class="nav-item" routerLinkActive="active">
+        <a class="nav-link" routerLink="contact">Contact</a>
+      </li>
+      <li class="nav-item" routerLinkActive="active">
+        <a class="nav-link" routerLink="assessment">Assessment</a>
+      </li>
+      <li class="nav-item" routerLinkActive="active" *ngIf="!auth.authenticated">
+        <a class="nav-link" routerLink="auth">Login | Register</a>
+      </li>
+      <li class="nav-item" *ngIf="auth.authenticated">
+        <a class="nav-link" routerLink="home" (click)="auth.logout()"><span class="fa fa-power-off"></span></a>
+      </li>
+    </ul>
+  </div>
+</nav>

@@ -1,4 +1,7 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
+import { FormioAuthService } from 'angular-formio/auth';
+
 
 @Component({
   selector: 'app-root',
@@ -6,5 +9,18 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.sass']
 })
 export class AppComponent {
-  title = 'app';
+  title = 'Mihai Moisoiu';
+
+  constructor(private auth: FormioAuthService, private router: Router) {
+    this.auth.onLogin.subscribe( () => {
+      this.router.navigate(['/home']);
+    });
+    this.auth.onLogout.subscribe( () => {
+      this.router.navigate(['/home']);
+    });
+    this.auth.onRegister.subscribe( () => {
+      this.router.navigate(['/home']);
+    });
+  }
+
 }
