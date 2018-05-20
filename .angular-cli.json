@@ -1,7 +1,7 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
   "project": {
-    "name": "mihai-frontend"
+    "name": "Mihai Moisoiu FrontEnd"
   },
   "apps": [
     {
@@ -9,7 +9,8 @@
       "outDir": "dist",
       "assets": [
         "assets",
-        "favicon.ico"
+        "favicon.ico",
+        "images"
       ],
       "index": "index.html",
       "main": "main.ts",

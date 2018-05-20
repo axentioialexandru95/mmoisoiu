@@ -1,4 +1,8 @@
 <div class="header">
+  <div class="background-image">
+    <div class="overlay"></div>
+    <img src="../../assets/images/header.jpeg" alt="">
+  </div>
   <div class="text">
     <div class="title"><h1>See our assessments</h1></div>
     <div class="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur aut commodi consequatur deserunt dolores eaque esse eveniet, exercitationem illo inventore iusto laborum nulla, numquam quod repellat repellendus temporibus voluptas voluptates!</div>
@@ -18,6 +22,10 @@
 
 <div class="sides">
   <div class="side left-side">
+    <div class="background-image">
+      <div class="overlay"></div>
+      <img src="../../assets/images/leftside.jpeg">
+    </div>
     <div class="content">
       <h3>Do you want to improve your business?</h3>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aut eveniet id nobis nostrum odio omnis reiciendis! Beatae consequuntur, doloribus, ducimus eius eos fugit ipsam minus nihil quia, vel voluptatibus.</p>
@@ -25,6 +33,10 @@
     </div>
   </div>
   <div class="side right-side">
+    <div class="background-image">
+      <div class="overlay"></div>
+      <img src="../../assets/images/rightside.jpeg">
+    </div>
     <div class="content">
       <h3>Do you want to improve your relationships?</h3>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aut eveniet id nobis nostrum odio omnis reiciendis! Beatae consequuntur, doloribus, ducimus eius eos fugit ipsam minus nihil quia, vel voluptatibus.</p>
@@ -34,10 +46,56 @@
 </div>
 
 <div class="about">
-  <div class="left-image"></div>
+  <div class="left-image">
+    <div class="background-image">
+      <img src="../../assets/images/mmoisoiu.jpg">
+    </div>
+  </div>
   <div class="right-content">
     <h3>Mihai Marius Moisoiu</h3>
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta harum hic illo impedit quae quaerat quam sunt tempore. Alias animi aut corporis ducimus eveniet fugit iste optio quaerat quod sunt. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi blanditiis consequatur cupiditate deleniti dignissimos, esse expedita in nisi nobis, numquam porro possimus quasi quibusdam recusandae vitae, voluptas voluptate. Aut, rerum?</p>
     <a routerLink="/about"><button class="btn btn-info">See more about me</button></a>
   </div>
+</div>
+
+<div class="testimonials">
+  <div class="background-image">
+    <div class="overlay"></div>
+    <img src="../../assets/images/rightside.jpeg">
+  </div>
+  <div class="content">
+    <div class="title">
+      <h1>Testimoniale</h1>
+    </div>
+    <ngb-carousel class="container">
+      <ng-template ngbSlide>
+        <div class="card testimonial">
+          <div class="card-body">
+            <h4 class="card-title">Card title</h4>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <h5>CEO @ GreenDays</h5>
+          </div>
+        </div>
+      </ng-template>
+      <ng-template ngbSlide>
+        <div class="card testimonial">
+          <div class="card-body">
+            <h4 class="card-title">2nd Testimonial</h4>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <h5>CEO @ GreenDays</h5>
+          </div>
+        </div>
+      </ng-template>
+      <ng-template ngbSlide>
+        <div class="card testimonial">
+          <div class="card-body">
+            <h4 class="card-title">3rd Testimonial</h4>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <h5>CEO @ GreenDays</h5>
+          </div>
+        </div>
+      </ng-template>
+    </ngb-carousel>
+  </div>
+
 </div>
